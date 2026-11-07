@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin:0; background:#F4F5F9; font-family:"Microsoft YaHei",sans-serif; color:#1E2233; }
+  .wrap { display:flex; gap:22px; padding:26px; }
+  .card { width:278px; background:#fff; border-radius:18px; padding:18px 20px 20px; box-shadow:0 2px 14px rgba(20,25,50,.08); }
+  .card h2 { margin:0 0 4px; font-size:16px; font-weight:500; }
+  .badge { display:inline-block; background:#EEEDFE; color:#534AB7; font-size:11px; padding:2px 8px; border-radius:6px; vertical-align:2px; }
+  .sub { font-size:11px; color:#8A8FA3; margin:0 0 10px; }
+  .big { width:196px; height:196px; display:block; margin:0 auto 12px; }
+  .desc { font-size:12px; color:#5A6076; line-height:1.6; min-height:40px; margin:0 0 10px; }
+  .sizes { display:flex; align-items:center; justify-content:center; gap:18px; border-top:1px solid #ECEEF4; padding-top:14px; }
+  .sizes span { font-size:10px; color:#9AA0B4; }
+  .sizes img { display:block; }
+  .cell { text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h2>方案 A · 双栏<span class="badge">推荐</span></h2>
+    <p class="sub">紫蓝渐变 / 编辑 · 预览语义</p>
+    <img class="big" src="icon-a.svg">
+    <p class="desc">左侧 M 代表编辑区，右侧文字条代表渲染结果，中间竖线呼应可拖拽分栏。</p>
+    <div class="sizes">
+      <div class="cell"><img src="icon-a.svg" width="48" height="48"><span>48</span></div>
+      <div class="cell"><img src="icon-a.svg" width="32" height="32"><span>32</span></div>
+      <div class="cell"><img src="icon-a.svg" width="24" height="24"><span>24</span></div>
+      <div class="cell"><img src="icon-a.svg" width="16" height="16"><span>16</span></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>方案 B · M↓</h2>
+    <p class="sub">深墨底 / 极简符号</p>
+    <img class="big" src="icon-b.svg">
+    <p class="desc">Markdown 经典 M + 向下箭头，线条最粗，小尺寸下辨识度最高。</p>
+    <div class="sizes">
+      <div class="cell"><img src="icon-b.svg" width="48" height="48"><span>48</span></div>
+      <div class="cell"><img src="icon-b.svg" width="32" height="32"><span>32</span></div>
+      <div class="cell"><img src="icon-b.svg" width="24" height="24"><span>24</span></div>
+      <div class="cell"><img src="icon-b.svg" width="16" height="16"><span>16</span></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>方案 C · 文档</h2>
+    <p class="sub">青绿渐变 / 通用编辑器语义</p>
+    <img class="big" src="icon-c.svg">
+    <p class="desc">折角纸张 + 文字行，右下角一点朱红做视觉锚点，偏传统笔记软件气质。</p>
+    <div class="sizes">
+      <div class="cell"><img src="icon-c.svg" width="48" height="48"><span>48</span></div>
+      <div class="cell"><img src="icon-c.svg" width="32" height="32"><span>32</span></div>
+      <div class="cell"><img src="icon-c.svg" width="24" height="24"><span>24</span></div>
+      <div class="cell"><img src="icon-c.svg" width="16" height="16"><span>16</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

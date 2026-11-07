@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "MDNote",
+  "version": "0.1.0",
+  "identifier": "com.mdnote.editor",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "MDNote · 轻量 Markdown 编辑器",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 760,
+        "minHeight": 480,
+        "dragDropEnabled": true,
+        "resizable": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "publisher": "MDNote",
+    "copyright": "Copyright © 2026 MDNote",
+    "category": "Productivity",
+    "shortDescription": "轻量、快速的 Windows Markdown 编辑器",
+    "longDescription": "MDNote 是一款基于 Tauri 2 与系统 WebView2 的轻量 Markdown 编辑器，支持双栏实时预览、多标签页、GFM、代码高亮、数学公式、Mermaid 图表与 PDF/HTML 导出。",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "fileAssociations": [
+      {
+        "ext": ["md", "markdown"],
+        "name": "MDNoteMarkdown",
+        "description": "Markdown 文档",
+        "role": "Editor",
+        "mimeType": "text/markdown"
+      }
+    ],
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper"
+      },
+      "nsis": {
+        "installMode": "both",
+        "languages": ["SimpChinese", "English"],
+        "displayLanguageSelector": true,
+        "compression": "lzma",
+        "template": "nsis/installer.nsi",
+        "installerHooks": "nsis",
+        "installerIcon": "icons/icon.ico",
+        "uninstallerIcon": "icons/icon.ico"
+      }
+    }
+  }
+}
