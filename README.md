@@ -2,7 +2,6 @@
 
 一个轻量的 Windows Markdown 编辑器。基于 Tauri 2 / React 19 / CodeMirror 6，Rust 后端，复用系统 WebView2，**安装包仅约 3.3 MB**。
 
-> 下载与更新：[Releases](https://github.com/BenTom-bo/md-note/releases/latest)
 
 ## 下载
 
